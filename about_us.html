@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/images/icon.png" type="image/png" />
+
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="stylesheet" href="./assets/css/media_query.css" />
+
+  <title>About us</title>
+  <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MVL98BG1ZF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MVL98BG1ZF');
+</script>
+<script>
+ 
+</script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- navbar -->
+
+    <header class="">
+      <div class="navbar">
+        <!--menu button for small screen-->
+        <button class="navbar-menu-btn">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+        <a href="index.html" class="navbar-brand">
+          <img src="./assets/images/MovieMaze.png" alt="" />
+        </a>
+
+        <!-- navbar navigation-->
+
+        <nav class="">
+          <ul class="navbar-nav">
+            <li><a href="index.html" class="navbar-link">Home</a></li>
+            <li><a href="News.html" class="navbar-link">News</a></li>
+            <li><a href="about_us.html" class="navbar-link">About us</a></li>
+          </ul>
+        </nav>
+
+        <!-- search and sign-in -->
+
+        <div class="navbar-actions">
+          <div class="navbar-form">
+            <input id="searchBox" type="text" name="search" placeholder="Search..." class="navbar-form-search" />
+              <script>
+                const inputElement = document.getElementById("searchBox");
+                inputElement.addEventListener("keydown", function (event) {
+                  if (event.key === "Enter") {
+                    search2();
+                  }
+                });
+                </script>
+            <button class="navbar-form-btn">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+
+            <button class="navbar-form-close">
+              <ion-icon name="close-circle-outline"></ion-icon>
+            </button>
+          </div>
+
+          <!--search button for small screen -->
+
+          <button class="navbar-search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+          <a href="#" class="navbar-signin">
+            <button onclick="login()"><span>Sign in</span></button>
+            <ion-icon style="color: #007FFF;" name="log-in-outline"></ion-icon>
+          </a>
+
+        </div>
+      </div>
+    </header>
+
+
+    <div class="about">
+        <h1>About us</h1>
+        <p>At MovieMaze, our mission is to provide movie enthusiasts with a comprehensive and reliable source of information and entertainment. We strive to create a platform where visitors can discover new films and stay up-to-date with the latest movie news and releases.
+          Our vision is to become the go-to destination for movie lovers worldwide, providing a diverse range of content that appeals to both casual viewers and cinephiles alike.
+          Through our commitment to accuracy, creativity, and innovation, we aim to exceed our visitors' expectations, offering a user-friendly and immersive experience that keeps them coming back for more. Whether you're a casual moviegoer or a dedicated cinephile, we're here to help you navigate the ever-changing world of cinema and discover your next favorite film.
+          </p>
+        <h3>Team Members</h3>
+        <p>At MovieMaze, we are a team of two passionate movie enthusiasts and co-founders: <span class="names">Nidal Nicolas</span> and <span class="names">Alain Bejjani</span>.
+
+          Nidal brings a wealth of knowledge and expertise in film criticism, having spent years studying and analyzing films. Nidal has a deep appreciation for the art of filmmaking and is dedicated to providing our visitors with insightful and thoughtful movie reviews.
+          
+          Alain, on the other hand, has a background in web development and design. With a keen eye for aesthetics and functionality, Alain is responsible for ensuring that our website is user-friendly, visually appealing, and runs smoothly.
+          
+          Together, we are committed to providing our visitors with high-quality content and a platform where movie enthusiasts can discover and share their love for cinema. While our team may be small, our passion for movies and dedication to our website is anything but.</p>
+      
+        <h3>Contact Us</h3>
+        <ul>
+            <li><a href="mailto:mail_example@gmail.com">Email us : <span class="links">mail_example@gmail.com</span> </a></li>
+            <li><a href="tel:123-456-7890">Call us :  <span class="links">123-456-789</span></a></li>
+        </ul>
+    </div>
+    <button onclick="scroll_to_top()" id="to_top"><ion-icon style="font-size: 25px;"
+      name="arrow-up-outline"></ion-icon></button>
+    <!--
+      - FOOTER SECTION
+    -->
+    <footer>
+        <div class="footer-content">
+          <div class="footer-brand">
+            <img src="./assets/images/MovieMaze.png" alt="" class="footer-logo" />
+            <p class="slogan">
+              Movies & TV Shows.
+            </p>
+  
+            <div class="social-link">
+              <a href="#">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </div>
+          </div>
+  
+          <div class="footer-links">
+            <ul>
+              <h4 class="link-heading">MovieMaze</h4>
+  
+              <li class="link-item"><a href="index.html#viewSearch" >Movies</a></li>
+              <li class="link-item"><a href="login.html">My profile</a></li>
+              <li class="link-item"><a href="about_us.html">Contacts</a></li>
+            </ul>
+  
+            <ul>
+              <h4 class="link-heading">Browse</h4>
+              <li class="link-item"><a href="index.html">Home</a></li>
+              <li class="link-item"><a href="News.html">News</a></li>
+              <li class="link-item"><a href="about_us.html">About us</a></li>
+  
+            </ul>
+  
+  
+  
+  
+          </div>
+        </div>
+  
+        <div class="footer-copyright">
+          <div class="copyright">
+            <p>&copy; copyright 2023 MovieMaze</p>
+          </div>
+  
+          <div class="wrapper">
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms and conditions</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  
+    <!-- ionicon link(import) -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+  
+  </html>
+
+

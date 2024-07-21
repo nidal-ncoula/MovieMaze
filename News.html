@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/images/icon.png" type="image/png" />
+
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="stylesheet" href="./assets/css/media_query.css" />
+  <title>News</title>
+  <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MVL98BG1ZF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MVL98BG1ZF');
+</script>
+ <!-- Google tag (gtag.js) -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-MVL98BG1ZF"></script>
+ <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+ 
+   gtag('config', 'G-MVL98BG1ZF');
+ </script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- navbar -->
+
+    <header class="">
+      <div class="navbar">
+        <!-- menu button for small screen -->
+        <button class="navbar-menu-btn">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+        <a href="index.html" class="navbar-brand">
+          <img src="./assets/images/MovieMaze.png" alt="" />
+        </a>
+
+        <!-- navbar navigation-->
+
+        <nav class="">
+          <ul class="navbar-nav">
+            <li><a href="index.html" class="navbar-link">Home</a></li>
+            <li><a href="News.html" class="navbar-link">News</a></li>
+            <li><a href="about_us.html" class="navbar-link">About us</a></li>
+          </ul>
+        </nav>
+
+        <!-- search and sign-in -->
+
+        <div class="navbar-actions">
+          <div class="navbar-form">
+            <input id="searchBox" type="text" name="search" placeholder="Search..." class="navbar-form-search" />
+              <script>
+                const inputElement = document.getElementById("searchBox");
+                inputElement.addEventListener("keydown", function (event) {
+                  if (event.key === "Enter") {
+                    search2();
+                  }
+                });
+                </script>
+            <button class="navbar-form-btn">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+
+            <button class="navbar-form-close">
+              <ion-icon name="close-circle-outline"></ion-icon>
+            </button>
+          </div>
+
+          <!--search button for small screen -->
+
+          <button class="navbar-search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+          <a href="#" class="navbar-signin">
+            <button onclick="login()"><span>Sign in</span></button>
+            <ion-icon style="color: #007FFF;" name="log-in-outline"></ion-icon>
+          </a>
+
+        </div>
+
+    </header>
+
+    <div class="News">
+      <div class="news-container">
+          <div class="column1">
+              <div class="news">
+                  <h1>News</h1>
+                 <ul>
+                  <li>Pirates of the Caribbean Producer Wants Johnny 
+                    Depp Back in the Franchise</li>
+                    <li>Brendan Fraser Gets Emotional After Winning SAG Award</li>
+                    <li>Avengers: The Kang Dynasty Writer Hints at Namor's Appearance in the Film</li>
+                    <li>Tom Cruise Says He Cried During His Reunion With Val Kilmer</li>
+                    <li>New Lord of the Rings Movies in the Works at Warner Bros., Peter Jackson Hints at His Involvement</li>
+                    <li>Gladiator 2 Star Paul Mescal Is Proud & Intimidated to Lead the Long-Awaited Sequel</li>
+                    <li>Steven Spielberg to Adapt Stanley Kubrick's Lost Film Napoleon as Limited Series</li>
+                    <li>The Pope's Exorcist Trailer Finds Russell Crowe Battling Demons</li>
+
+                 </ul>
+              </div>
+              <div class="facts">
+                  <h1>Did You Know?</h1>
+                  <ul>
+                    <li>The code in "The Matrix" comes from sushi recipes</li>
+                    <p>Those green symbols trailing down in "The Matrix" aren’t complicated algorithms. A production designer scanned symbols from his wife’s sushi cookbooks, then manipulated them to create the iconic “code.” Can you answer these 13 trivia questions only geniuses get right?</p>
+                    <li>One famous "Pulp Fiction" scene was filmed backward</li>
+                    <p>When Uma Thurman’s character is having an overdose, it looks like John Travolta sticks a needle in her to revive her. Actually, Travolta pulled the needle out
+                      , and the film was run backward to reverse the action.</p>
+                    <li>The cat in "The Godfather" was a stray</li>
+                    <p>Director Francis Ford Coppola found the cat in the studio and handed it to Marlon Brando before the shot. The cat loved the actor so much that it stayed in his lap and purred so loudly that the crew 
+                      was afraid the noise would drown out the dialogue.</p>
+                    <li>Sean Connery wore a toupee in every "James Bond" movie</li>
+                    <p>If you think the dreamy 007 seemed too good to be true, you’re right. Sean Connery started balding at age 17. Make sure you put these 12 greatest
+                       spy movies of all time on your streaming list.</p>
+                    <li>There’s a Starbucks cup in every "Fight Club" scene</li>
+                    <p>Director David Fincher thought the Starbucks shops
+                       popping up on every block of LA in the late '90s was 
+                       “too much of a good thing,” so he poked fun of the 
+                       coffee chain in "Fight Club." He’s claimed to 
+                       have sneaked a Starbucks cup into every shot,
+                        with the permission of the chain — with one 
+                        exception. Starbucks didn’t want its shop 
+                        destroyed on film, so that scene uses the 
+                        made-up Gratifico Coffee instead. Find out what
+                         the most popular movie was the year you were born.</p>
+                    <li>Some of the velociraptor noises in "Jurassic Park" are actually tortoises mating</li>
+                    <p>At least that’s what the sound designer 
+                      used when the raptors were communicating.
+                       Other scenes of the species used horse breathing
+                        and goose hisses. Find out what scientists say
+                         T-Rexes actually sounded like.
+                       (Hint: It's not turtle sex — or a roar.)</p>
+                  </ul>
+              </div>
+
+              
+          </div>
+          <div class="column2 ">
+              <div class="top_grossing">
+                  <h1 >Top Grossing</h1>
+                 <div class="top3">
+                  <div class="movie-li">
+                    <a href="movie-page.html"><img src="./assets/images/movies/avatar.jpg"/></a>
+                    <span>1-Avatar</span>
+                    <div class="text">
+                   <ion-icon  name="cash-outline"></ion-icon><span>2.923B$</span>
+                    </div>
+                  
+                  </div>
+                  <div class="movie-li">
+                    <a href="movie-page.html"><img src="./assets/images/movies/ant-man_4.jpg"/></a>
+                    <span>2-Ant Man</span>
+                    <div class="text">
+                    <ion-icon  name="cash-outline"></ion-icon> <span>519M$</span>
+                  </div>
+                  </div>
+                  <div class="movie-li">
+                    <a href="movie-page.html"><img src="./assets/images/movies/cocaine-bear.jpg"/></a>
+                    <span>3-Cocaine Bear</span>
+                    <div class="text">
+                      <ion-icon  name="cash-outline"></ion-icon><span>34.1M$</span>
+                    </div>
+                  </div>
+                 </div>
+              </div>
+          </div>
+      </div>
+
+      <button onclick="scroll_to_top()" id="to_top"><ion-icon style="font-size: 25px;"
+        name="arrow-up-outline"></ion-icon></button>
+  </div>
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="footer-content">
+          <div class="footer-brand">
+            <img src="./assets/images/MovieMaze.png" alt="" class="footer-logo" />
+            <p class="slogan">
+              Movies & TV Shows.
+            </p>
+  
+            <div class="social-link">
+              <a href="#">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </div>
+          </div>
+  
+          <div class="footer-links">
+            <ul>
+              <h4 class="link-heading">MovieMaze</h4>
+  
+              <li class="link-item"><a href="index.html#viewSearch" >Movies</a></li>
+              <li class="link-item"><a href="login.html">My profile</a></li>
+              <li class="link-item"><a href="about_us.html">Contacts</a></li>
+            </ul>
+  
+            <ul>
+              <h4 class="link-heading">Browse</h4>
+              <li class="link-item"><a href="index.html">Home</a></li>
+              <li class="link-item"><a href="News.html">News</a></li>
+              <li class="link-item"><a href="about_us.html">About us</a></li>
+            </ul>
+  
+  
+  
+  
+          </div>
+        </div>
+  
+        <div class="footer-copyright">
+          <div class="copyright">
+            <p>&copy; copyright 2023 MovieMaze</p>
+          </div>
+  
+          <div class="wrapper">
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms and conditions</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  
+    <!-- ionicon link(import) -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+  
+  </html>
+
+
+</body>

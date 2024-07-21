@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/images/icon.png" type="image/png" />
+
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="stylesheet" href="./assets/css/media_query.css" />
+  <title>MovieMaze</title>
+  <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MVL98BG1ZF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MVL98BG1ZF');
+</script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- navbar-->
+
+    <header class="">
+      <div class="navbar">
+        <!--menu button for small screen -->
+        <button class="navbar-menu-btn">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+        <a href="index.html" class="navbar-brand">
+          <img src="./assets/images/MovieMaze.png" alt="" />
+        </a>
+
+        <!-- navbar navigation-->
+
+        <nav class="">
+          <ul class="navbar-nav">
+            <li><a href="index.html" class="navbar-link">Home</a></li>
+            <li><a href="News.html" class="navbar-link">News</a></li>
+            <li><a href="about_us.html" class="navbar-link">About us</a></li>
+          </ul>
+        </nav>
+
+        <!-- search and sign-in-->
+
+        <div class="navbar-actions">
+          <div class="navbar-form">
+            <input id="searchBox" type="text" name="search" placeholder="Search..." class="navbar-form-search" />
+              <script>
+                const inputElement = document.getElementById("searchBox");
+                inputElement.addEventListener("keydown", function (event) {
+                  if (event.key === "Enter") {
+                    search2();
+                  }
+                });
+                </script>
+            <button class="navbar-form-btn">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+
+            <button class="navbar-form-close">
+              <ion-icon name="close-circle-outline"></ion-icon>
+            </button>
+          </div>
+
+          <!--search button for small screen -->
+
+          <button class="navbar-search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+          <a href="#" class="navbar-signin">
+            <button onclick="login()"><span>Sign in</span></button>
+            <ion-icon style="color: #007FFF;" name="log-in-outline"></ion-icon>
+          </a>
+
+        </div>
+    </header>
+    <div class="trailer-card">
+      <video poster="assets/images/thumbnail.webp" controls>
+        <source src="./assets/images/Interstellar.mp4" type="video/mp4">
+      </video>
+      <div class="trailer-info">
+        <h3 style="border-bottom: solid 2px white;">Interstellar <span style="color: #007FFF; font-size: 14px;"><br>
+            directed by</span><span
+            style="margin-left: 10px;font-size: 20px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Christopher
+            Nolan</span></h3>
+        <div class="trailer-info-time">
+          <div style="display: flex;">
+            <ion-icon style="color:#007FFF;--ionicon-stroke-width: 50px;margin-top: 1.5px; margin-right: 4px;"
+              name="calendar-outline"></ion-icon>
+            <p style="font-weight: bold;color: white;">2014</p>
+          </div>
+          <div style="display: flex;">
+            <ion-icon style="color:#007FFF;--ionicon-stroke-width: 50px;margin-top: 1.5px; margin-right: 4px;"
+              name="time-outline"></ion-icon>
+            <p style="font-weight: bold;color: white;">3h</p>
+          </div>
+          <div style="display: flex;">
+            <ion-icon style="color:#007FFF;--ionicon-stroke-width: 50px;margin-top: 1.5px; margin-right: 4px;"
+              name="star-outline"></ion-icon>
+            <p style="font-weight: bold;color: white;">8.6</p>
+          </div>
+        </div>
+        <h4>Description</h4>
+        <p style="color:white; font-size: 14px;font-weight: bold;">When Earth becomes uninhabitable in the future, a
+          farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to
+          find a new planet for humans.</p>
+        <div class="cast">
+          <div class="cast-actor">
+            <img src="assets/images/Matthew McConaughey interview gq october 2020.jpg.webp" alt="cast">
+            <h4>Mathew<br>McConaughey</h4>
+          </div>
+          <div class="cast-actor">
+            <img src="assets/images/jessica chastain.jpg" alt="cast">
+            <h4>Jessica<br>Chastain</h4>
+          </div>
+          <div class="cast-actor">
+            <img src="assets/images/anne hathaway.jpg" alt="cast">
+            <h4>Anne<br>Hathaway</h4>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="reviews-container">
+      <h2 style="border-bottom: solid 2px white;">Reviews</h2>
+      <h3 style="color:#007FFF;margin-top: 30px;margin-bottom: 10px;">IGN</h3>
+      <p>" Interstellar is an imperfect film, but like its central characters, aims about as high as one can. The
+        ambition, execution, and craftsmanship are all to be admired. As the filmmaker intended, this is an experience
+        that one can only truly have in the theatre itself and it is one worth having. Though, as mentioned,
+        Interstellar also has the potential to become a highly divisive film. Ultimately, the viewers takeaway will
+        likely come down to their emotional response. "</p>
+      <h3 style="color:#007FFF;margin-top: 30px;margin-bottom: 10px;">Richard Roeper</h3>
+      <p>" This is one of the most beautiful films I have ever seen. "</p>
+      <h3 style="color:#007FFF;margin-top: 30px;margin-bottom: 10px;">David Stratton</h3>
+      <p>" This is not only a tremendously exciting space adventure... It's also a rich and thoughtful meditation on
+        time and space and gravity. "</p>
+    </div>
+
+    <button onclick="scroll_to_top()" id="to_top"><ion-icon style="font-size: 25px;"
+        name="arrow-up-outline"></ion-icon></button>
+
+
+    <!-- FOOTER SECTION -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="./assets/images/logo.png" alt="" class="footer-logo" />
+          <p class="slogan">
+            Movies & TV Shows.
+          </p>
+
+          <div class="social-link">
+            <a href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <ul>
+            <h4 class="link-heading">MovieMaze</h4>
+
+            <li class="link-item"><a href="index.html#viewSearch" >Movies</a></li>
+            <li class="link-item"><a href="login.html">My profile</a></li>
+            <li class="link-item"><a href="about_us.html">Contacts</a></li>
+          </ul>
+
+          <ul>
+            <h4 class="link-heading">Browse</h4>
+            <li class="link-item"><a href="#">Home</a></li>
+            <li class="link-item"><a href="#">Coming Soon</a></li>
+            <li class="link-item"><a href="#">News</a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <div class="copyright">
+          <p>&copy; copyright 2023 MovieMaze</p>
+        </div>
+
+        <div class="wrapper">
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms and conditions</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./assets/js/main.js"></script>
+
+  <!-- ionicon link(import)-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
